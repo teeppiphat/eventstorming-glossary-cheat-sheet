@@ -1,211 +1,211 @@
-# EventStorming Glossary & Cheat sheet
+# คำศัพท์และคู่มือ EventStorming
 
-EventStorming is the smartest approach to collaborate beyond silo boundaries. The power of EventStorming comes from a diverse multi-disciplined group of people who, together, have a lot of wisdom and knowledge. While it originally was invented for a workshop to model domain-driven design aggregates, it now has a broader spectrum. From gaining a big-picture problem space of the whole domain to gaining insight into the entire software delivery flow and creating a long term planning. Every one of these workshops has the same basic requirements and needs. 
+EventStorming เป็นแนวทางที่ชาญฉลาดที่สุดในการทำงานร่วมกันข้ามขอบเขตของหน่วยงาน พลังของ EventStorming มาจากกลุ่มคนที่มีความหลากหลายทางสาขาวิชา ซึ่งเมื่อรวมกันแล้วมีความรู้และภูมิปัญญามากมาย แม้ว่าเดิมทีจะถูกคิดค้นขึ้นสำหรับเวิร์กช็อปเพื่อสร้างแบบจำลอง aggregates ในการออกแบบที่ขับเคลื่อนด้วยโดเมน (domain-driven design) แต่ปัจจุบันมีการใช้งานในวงกว้างขึ้น ตั้งแต่การทำความเข้าใจภาพรวมของปัญหาทั้งหมดในโดเมน ไปจนถึงการทำความเข้าใจกระบวนการส่งมอบซอฟต์แวร์ทั้งหมด และการสร้างแผนระยะยาว เวิร์กช็อปเหล่านี้ทุกแบบมีความต้องการและความจำเป็นพื้นฐานเหมือนกัน
 
-Here you will find a combination of a glossary of terms on EventStorming core concepts written down in a consistent and comprehensive glossary. Just be sure to try and avoid jargon as much as possible, as it sets up the unnecessary insider-outsider distinction. And a Cheat sheet that you can use facilitating your own EventStorming.
+ที่นี่คุณจะพบการรวมกันของคำศัพท์เกี่ยวกับแนวคิดหลักของ EventStorming ที่เขียนขึ้นอย่างสอดคล้องและครอบคลุม แค่พยายามหลีกเลี่ยงศัพท์เฉพาะทางให้มากที่สุด เพราะมันสร้างความแตกต่างระหว่างคนในกับคนนอกโดยไม่จำเป็น และคู่มืออ้างอิงที่คุณสามารถใช้ในการอำนวยความสะดวกใน EventStorming ของคุณเอง
 
-## Glossary
+## คำศัพท์
 
-### Core Concepts
+### แนวคิดหลัก
 
-**Domain Event**
-A Domain Event is the main concept of EventStorming. It is an event that is relevant for the domain experts and contextual for the domain that is being explored. A Domain Event is a verb at the past tense. The official EventStorming colour is orange.
+**Domain Event (เหตุการณ์ในโดเมน)**
+Domain Event เป็นแนวคิดหลักของ EventStorming มันคือเหตุการณ์ที่มีความเกี่ยวข้องสำหรับผู้เชี่ยวชาญในโดเมนและมีบริบทสำหรับโดเมนที่กำลังสำรวจ Domain Event เป็นกริยาในรูปอดีต สีอย่างเป็นทางการของ EventStorming คือสีส้ม
 
-**HotSpot**
-Hotspots are used to visualise and capture hot conflicts. Conflicts caused by, and not exclusive to, inconsistencies (in language), frictions, questions, dissent, objections, issues or procrastinating going deep to explore for later. The official EventStorming colour is neon pink and we also slightly pivot a hotspot when we use it.
+**HotSpot (จุดร้อน)**
+Hotspots ใช้เพื่อแสดงภาพและจับจุดความขัดแย้งที่ร้อนแรง ความขัดแย้งที่เกิดจาก ไม่จำกัดเพียง ความไม่สอดคล้องกัน (ในภาษา) ความเสียดทาน คำถาม ความไม่เห็นด้วย ข้อโต้แย้ง ปัญหา หรือการเลื่อนการเจาะลึกไปทำภายหลัง สีอย่างเป็นทางการของ EventStorming คือสีชมพูนีออน และเราจะเอียง hotspot เล็กน้อยเมื่อใช้งาน
 
-**Timeline**
-EventStorming is a powerful tool when we have a story to tell, when we have a timeline. The paper roll on the wall represents time from left to right. We can have parallel streams from top to bottom on the paper roll.
+**Timeline (เส้นเวลา)**
+EventStorming เป็นเครื่องมือที่ทรงพลังเมื่อเรามีเรื่องราวที่จะเล่า เมื่อเรามีเส้นเวลา กระดาษม้วนบนผนังแสดงถึงเวลาจากซ้ายไปขวา เราสามารถมีกระแสข้อมูลแบบขนานจากบนลงล่างบนกระดาษม้วนได้
 
 ![Core Concepts](/_resources/core-concepts.jpg)
 
-**Chaotic Exploration**  
-Chaotic exploration can be used at the start of EventStorming. Each person writes Domain Events by themselves that they can think off. They will put these Domain Events in order they think they happen on the paper roll.
+**Chaotic Exploration (การสำรวจแบบอลหม่าน)**
+Chaotic exploration สามารถใช้ได้ที่จุดเริ่มต้นของ EventStorming แต่ละคนเขียน Domain Events ด้วยตัวเองตามที่คิดออก จากนั้นจะนำ Domain Events เหล่านี้ไปวางบนกระดาษม้วนตามลำดับที่พวกเขาคิดว่าเหตุการณ์เกิดขึ้น
 
-**Enforce the Timeline**  
-A phase happening after chaotic exploration, meaning we try to make the timeline consistent and remove duplicate stickies.
+**Enforce the Timeline (บังคับให้เป็นไปตามเส้นเวลา)**
+ขั้นตอนที่เกิดขึ้นหลังจาก chaotic exploration หมายความว่าเราพยายามทำให้เส้นเวลาสอดคล้องกันและลบสติกเกอร์ที่ซ้ำกันออก
 
 ### Big Picture EventStorming
 
-The goal of Big Picture EventStorming is to assess the health of an existing line of business or explore the viability of a new startup business model. It helps the group create a shared state of mind of the vision of that domain of the company. We can use the output as input for Conway’s law alignment, organising business flow around teams and software with emergent bounded contexts. You can do these workshop with 10-30+ people on one paper roll.
+เป้าหมายของ Big Picture EventStorming คือการประเมินสุขภาพของสายธุรกิจที่มีอยู่ หรือสำรวจความเป็นไปได้ของโมเดลธุรกิจสตาร์ทอัพใหม่ มันช่วยให้กลุ่มสร้างสถานะจิตใจร่วมกันเกี่ยวกับวิสัยทัศน์ของโดเมนนั้นของบริษัท เราสามารถใช้ผลลัพธ์เป็นข้อมูลนำเข้าสำหรับการจัดตำแหน่งตามกฎของคอนเวย์ การจัดระเบียบกระบวนการธุรกิจรอบๆ ทีมและซอฟต์แวร์ด้วย bounded contexts ที่เกิดขึ้นเอง คุณสามารถทำเวิร์กช็อปเหล่านี้กับคน 10-30+ คนบนกระดาษม้วนหนึ่งม้วน
 
 ![Example big picture](/_resources/big-picture.jpg)
 
-**Opportunity**  
-Because a Hotspot can have a negative association we also give people the chance to add opportunities. We use green because of the association it has with something positive. Start using Opportunities after we made a consistent timeline.
+**Opportunity (โอกาส)**
+เนื่องจาก Hotspot อาจมีความหมายเชิงลบ เราจึงให้โอกาสผู้คนเพิ่มโอกาสด้วย เราใช้สีเขียวเพราะความเกี่ยวข้องที่มีกับสิ่งที่เป็นบวก เริ่มใช้ Opportunities หลังจากที่เราทำเส้นเวลาให้สอดคล้องกันแล้ว
 
-**Actor/Agent**  
-Actor or Agent is a group of people, a department, a team or a specific person involved around a (group of) Domain Event(s). The official colour to use is a small yellow post-it.
+**Actor/Agent (ตัวแสดง/ตัวกระทำ)**
+Actor หรือ Agent คือกลุ่มคน แผนก ทีม หรือบุคคลเฉพาะที่เกี่ยวข้องกับ Domain Event(s) สีอย่างเป็นทางการที่ใช้คือสติกเกอร์สีเหลืองขนาดเล็ก
 
-**System**  
-A system is a deployable IT System used as a solution for a problem in the domain. When we have finished making the timeline consistent, we can start mapping systems around Domain Events. There can also be duplicates and it can be anything from using Excel to some microservice. The official colour is a wide pink post-it.
+**System (ระบบ)**
+System คือระบบ IT ที่สามารถติดตั้งได้ซึ่งใช้เป็นโซลูชันสำหรับปัญหาในโดเมน เมื่อเราทำให้เส้นเวลาสอดคล้องกันเสร็จแล้ว เราสามารถเริ่มทำแผนที่ระบบรอบๆ Domain Events อาจมีระบบที่ซ้ำกันได้และอาจเป็นอะไรก็ได้ตั้งแต่การใช้ Excel ไปจนถึงไมโครเซอร์วิสบางตัว สีอย่างเป็นทางการคือสติกเกอร์สีชมพูขนาดกว้าง
 
-**Value**  
-We can add value like we would do in a value stream map, after we have made the timeline consistent. We do this to make explicit where the value is in our domain. We use the red and green small stickies to show positive and negative value.
+**Value (คุณค่า)**
+เราสามารถเพิ่มคุณค่าเหมือนที่เราทำใน value stream map หลังจากที่เราทำให้เส้นเวลาสอดคล้องกันแล้ว เราทำเช่นนี้เพื่อทำให้ชัดเจนว่าคุณค่าอยู่ที่ไหนในโดเมนของเรา เราใช้สติกเกอร์ขนาดเล็กสีแดงและสีเขียวเพื่อแสดงคุณค่าเชิงบวกและเชิงลบ
 
-**Pivotal Events**  
-With Pivotal Events, we start looking for the few most significant events in the flow. For an e-commerce website, they might look like “Article Added to Catalogue”, “Order Placed”, “Order Shipped”, “Payment Received” and “Order Delivered”. These are often the events with the highest number of people interested. 
+**Pivotal Events (เหตุการณ์สำคัญ)**
+ด้วย Pivotal Events เราเริ่มมองหาเหตุการณ์ที่สำคัญที่สุดไม่กี่อันในกระบวนการ สำหรับเว็บไซต์อีคอมเมิร์ซ พวกมันอาจดูเหมือน "Article Added to Catalogue", "Order Placed", "Order Shipped", "Payment Received" และ "Order Delivered" เหล่านี้มักเป็นเหตุการณ์ที่มีคนให้ความสนใจมากที่สุด
 
 ![Pivotal Events](/_resources/pivotal-events.PNG)
-*Source: https://leanpub.com/ddd_first_15_years – Discovering Bounded Contexts with EventStorming — Alberto Brandolini*
+*ที่มา: https://leanpub.com/ddd_first_15_years – Discovering Bounded Contexts with EventStorming — Alberto Brandolini*
 
-**Swimlanes**   
-Separating the whole flow into horizontal swimlanes, assigned to given actors or departments, is another tempting option since it improves readability. This seems the most obvious choice for people with a background in process modelling.
+**Swimlanes (ช่องทางแยก)**
+การแยกกระบวนการทั้งหมดออกเป็น swimlanes แนวนอนที่กำหนดให้กับตัวแสดงหรือแผนกเฉพาะ เป็นอีกตัวเลือกที่น่าสนใจเพราะช่วยเพิ่มความสามารถในการอ่าน นี่ดูเหมือนจะเป็นตัวเลือกที่ชัดเจนที่สุดสำหรับผู้ที่มีพื้นฐานด้านการสร้างแบบจำลองกระบวนการ
 
 ![Boundaries](/_resources/boundaries.PNG)
-*Source: https://leanpub.com/ddd_first_15_years – Discovering Bounded Contexts with EventStorming — Alberto Brandolini*
+*ที่มา: https://leanpub.com/ddd_first_15_years – Discovering Bounded Contexts with EventStorming — Alberto Brandolini*
 
 ![Big picture tools](/_resources/big-picture-tools.jpg)
 
-**Emerging Bounded Contexts**  
-From a Big Picture EventStorming we can picture Emerging Bounded Contexts. They are the first indicators of where to start deep-diving towards designing bounded contexts around business problems.
+**Emerging Bounded Contexts (Bounded Contexts ที่เกิดขึ้น)**
+จาก Big Picture EventStorming เราสามารถเห็นภาพ Emerging Bounded Contexts ได้ พวกมันเป็นตัวบ่งชี้แรกว่าจะเริ่มเจาะลึกไปสู่การออกแบบ bounded contexts รอบๆ ปัญหาทางธุรกิจที่ไหน
 
 ![Emergent bounded context](/_resources/emergent-bounded-contexts.PNG)
-*Source: https://leanpub.com/ddd_first_15_years – Discovering Bounded Contexts with EventStorming — Alberto Brandolini*
+*ที่มา: https://leanpub.com/ddd_first_15_years – Discovering Bounded Contexts with EventStorming — Alberto Brandolini*
 
 ![Big picture legend](/_resources/big-picture-legend.jpg)
 
 ### Process modelling EventStorming
 
-The goal of process modelling EventStorming is to assess the health of a current process in the company. It helps the group create a shared state of mind of the current status quo of the process, find bottlenecks and identify parts of the system to decouple from the existing software.
+เป้าหมายของ process modelling EventStorming คือการประเมินสุขภาพของกระบวนการปัจจุบันในบริษัท มันช่วยให้กลุ่มสร้างสถานะจิตใจร่วมกันเกี่ยวกับสถานะปัจจุบัน ค้นหาคอขวด และระบุส่วนของระบบที่จะแยกออกจากซอฟต์แวร์ที่มีอยู่
 
 ![Process modelling](/_resources/process-modelling.PNG)
-*Source: https://leanpub.com/introducing_eventstorming*
+*ที่มา: https://leanpub.com/introducing_eventstorming*
 
-**Policy**  
-A policy is a reaction that says “whenever X happens, we do Y”, eventually ending up with in the flow between a Domain Event and a Command/action. We use a big lilac post-it for these. A policy can be an automated process or manual. A policy can also be named a reactor, eventual business constraint or rule or a lie detector because there is always more to policies than you first think.
+**Policy (นโยบาย)**
+Policy คือการตอบสนองที่บอกว่า "เมื่อ X เกิดขึ้น เราทำ Y" ซึ่งท้ายที่สุดจะอยู่ในกระบวนการระหว่าง Domain Event และ Command/action เราใช้สติกเกอร์สีม่วงอ่อนขนาดใหญ่สำหรับสิ่งเหล่านี้ Policy อาจเป็นกระบวนการอัตโนมัติหรือแบบแมนนวล Policy ยังสามารถเรียกว่า reactor, eventual business constraint หรือ rule หรือ lie detector เพราะ policies มักมีอะไรมากกว่าที่คุณคิดในตอนแรกเสมอ
 
-**Command/Action**  
-Represents decisions, actions or intent. They can be initiated by an actor or from an automated process. During process EventStorming usually, the word "Action" usually fits better with stakeholders than command because it is easier to grasp. We officially use a blue coloured post-it for it.
+**Command/Action (คำสั่ง/การกระทำ)**
+แสดงถึงการตัดสินใจ การกระทำ หรือเจตนา พวกมันสามารถเริ่มต้นโดย actor หรือจากกระบวนการอัตโนมัติ ในระหว่าง process EventStorming คำว่า "Action" มักเหมาะสมกับผู้มีส่วนได้ส่วนเสียมากกว่า command เพราะเข้าใจได้ง่ายกว่า เราใช้สติกเกอร์สีน้ำเงินอย่างเป็นทางการ
 
-**Query Model/Information**  
-To make decisions an actor might need information, we capture these in a Query Model. For process EventStorming information might be more recognised by stakeholders. We officially use a green post-it to represent a query model.
+**Query Model/Information (โมเดลการสอบถาม/ข้อมูล)**
+เพื่อทำการตัดสินใจ actor อาจต้องการข้อมูล เราจับข้อมูลเหล่านี้ไว้ใน Query Model สำหรับ process EventStorming ข้อมูลอาจได้รับการยอมรับจากผู้มีส่วนได้ส่วนเสียมากกว่า เราใช้สติกเกอร์สีเขียวอย่างเป็นทางการเพื่อแสดงถึง query model
 
 ![Process design tools](/_resources/process-design.jpg)
 
-**Enforce colour coding**  
-Enforcing the colour coding is playing EventStorming by the rules. Often used after or during enforcing the timeline it creates a different dynamic. Below you see the colour coding and how they are to be used in the flow of the timeline. 
+**Enforce colour coding (บังคับให้ใช้รหัสสี)**
+การบังคับให้ใช้รหัสสีคือการเล่น EventStorming ตามกฎ มักใช้หลังจากหรือในระหว่างการบังคับให้เป็นไปตามเส้นเวลา มันสร้างพลวัตที่แตกต่าง ด้านล่างนี้คุณจะเห็นรหัสสีและวิธีการใช้งานในกระบวนการของเส้นเวลา
 
 ![Process picture](/_resources/process-picture.jpg)
 
 ### Software Design EventStorming
 
-The outcome of a design level EventStorming is to design clean and maintainable Event-Driven software, to support rapidly evolving businesses. Together with business stakeholders, we design a shared language and represent that in a shared model that brings value in solving a problem within a bounded context.
+ผลลัพธ์ของ design level EventStorming คือการออกแบบซอฟต์แวร์ Event-Driven ที่สะอาดและบำรุงรักษาได้ เพื่อสนับสนุนธุรกิจที่พัฒนาอย่างรวดเร็ว ร่วมกับผู้มีส่วนได้ส่วนเสียทางธุรกิจ เราออกแบบภาษาร่วมและแสดงภาษานั้นในโมเดลร่วมที่นำคุณค่ามาในการแก้ปัญหาภายใน bounded context
 
-**Constraint**  
-A constraint is a restriction we have or need to design from our problem space when we want to perform a command/action, another word could be consistent business constraint or rule. The official color to use is a big yellow post-it. It was called an aggregate before which is now officially a legacy word in EventStorming, since we prefer not to use the word aggregate with business stakeholders.
+**Constraint (ข้อจำกัด)**
+Constraint คือข้อจำกัดที่เรามีหรือจำเป็นต้องออกแบบจากปัญหาของเราเมื่อเราต้องการดำเนินการ command/action คำอื่นอาจเป็น consistent business constraint หรือ rule สีอย่างเป็นทางการที่ใช้คือสติกเกอร์สีเหลืองขนาดใหญ่ เดิมเรียกว่า aggregate ซึ่งตอนนี้เป็นคำที่ล้าสมัยอย่างเป็นทางการใน EventStorming เนื่องจากเราไม่ชอบใช้คำว่า aggregate กับผู้มีส่วนได้ส่วนเสียทางธุรกิจ
 
-![Software picture](/_resources/software-picture.jpg)
+![Software picture](/_resources/Software-picture.jpg)
 ![Software design tools](/_resources/software-design.jpg)
 
-## Cheat Sheet
+## คู่มืออ้างอิง
 
-### Preparations
+### การเตรียมการ
 
-#### Invites
+#### คำเชิญ
 
-Invites are essential to make it a successful workshop. You want to invite everyone who brings knowledge and who needs the knowledge, usually domain experts and the engineers. You want to add information about what the goal of the workshop is, and what EventStorming is. I always send the video Alberto Brandolini – 50,000 Orange Stickies Later to the attendees plus the resources page from eventstorming.com.
+คำเชิญเป็นสิ่งสำคัญในการทำให้เวิร์กช็อปประสบความสำเร็จ คุณต้องการเชิญทุกคนที่นำความรู้มาและผู้ที่ต้องการความรู้ โดยปกติคือผู้เชี่ยวชาญในโดเมนและวิศวกร คุณต้องการเพิ่มข้อมูลเกี่ยวกับเป้าหมายของเวิร์กช็อป และ EventStorming คืออะไร ฉันมักส่งวิดีโอ Alberto Brandolini – 50,000 Orange Stickies Later ให้กับผู้เข้าร่วม รวมถึงหน้าทรัพยากรจาก eventstorming.com
 
-#### Materials
+#### วัสดุอุปกรณ์
 
-There is nothing so annoying as not having the right material, so you want to make absolutely sure you have everything needed. I have written a blog post here about it, go check it out!
+ไม่มีอะไรน่ารำคาญไปกว่าการไม่มีวัสดุที่เหมาะสม ดังนั้นคุณต้องแน่ใจอย่างยิ่งว่ามีทุกอย่างที่จำเป็น ฉันได้เขียนบล็อกโพสต์เกี่ยวกับเรื่องนี้ ไปดูกันเลย!
 
-#### Room setup
+#### การจัดห้อง
 
-The best picture still is the one from the book EventStorming on leanpub. The idea is to have a modelling surface around 6-8 meters, a table for putting the materials on and a visible legend for people to see. We want to have no seats in sight. Also, you want a room preferable where the windows can open so you can have fresh oxygen in the room and have some food or candies lying around.
+ภาพที่ดีที่สุดยังคงเป็นภาพจากหนังสือ EventStorming บน leanpub แนวคิดคือมีพื้นผิวสำหรับสร้างแบบจำลองประมาณ 6-8 เมตร โต๊ะสำหรับวางวัสดุอุปกรณ์ และคำอธิบายสัญลักษณ์ที่มองเห็นได้สำหรับคน เราต้องการไม่มีที่นั่งให้เห็น นอกจากนี้ คุณต้องการห้องที่หน้าต่างสามารถเปิดได้ เพื่อให้มีอากาศบริสุทธิ์ในห้อง และมีอาหารหรือขนมวางไว้รอบๆ
 
 ![Room setup](/_resources/room-setup.png)
-*Source: https://leanpub.com/introducing_eventstorming*
+*ที่มา: https://leanpub.com/introducing_eventstorming*
 
-#### Facilitation
+#### การอำนวยความสะดวก
 
-For an effective EventStorming workshop, you want to have a dedicated facilitator.
+สำหรับเวิร์กช็อป EventStorming ที่มีประสิทธิภาพ คุณต้องการมีผู้อำนวยความสะดวกเฉพาะ
 
-As a facilitator:
+ในฐานะผู้อำนวยความสะดวก:
 
-* You want to have a neutral role so that you can cut long discussions short and visualise them with hotspots.
-* You need to find to balance to when you will intervene and when you will let the discussion flow.
-* You are always the first in the room and the last to leave, so you can set up the room correctly and talk with people afterwards.
-* It is your job to facilitate the group and give them feedback and insights about the group interaction so that they can decide what to do. For instance, when you see multiple people looking on their phone, you can tell “I see that part of the group is distracted from the activity by looking on their phones”.
-* You have to observe and let the group figure out what their needs are, however sometimes you need to decide for them when the group can’t.
+* คุณต้องการมีบทบาทที่เป็นกลาง เพื่อที่คุณจะสามารถตัดการอภิปรายยาวๆ ให้สั้นลงและแสดงภาพด้วย hotspots
+* คุณต้องหาจุดสมดุลว่าเมื่อไหร่คุณจะเข้าแทรกแซงและเมื่อไหร่คุณจะปล่อยให้การอภิปรายดำเนินไป
+* คุณเป็นคนแรกที่เข้าห้องและคนสุดท้ายที่ออก เพื่อที่คุณจะสามารถจัดห้องให้ถูกต้องและพูดคุยกับผู้คนหลังจากนั้น
+* มันเป็นหน้าที่ของคุณในการอำนวยความสะดวกให้กลุ่มและให้ข้อเสนอแนะและข้อมูลเชิงลึกเกี่ยวกับการโต้ตอบของกลุ่ม เพื่อที่พวกเขาจะได้ตัดสินใจว่าจะทำอะไร ตัวอย่างเช่น เมื่อคุณเห็นหลายคนกำลังมองโทรศัพท์ คุณสามารถบอกว่า "ฉันเห็นว่าส่วนหนึ่งของกลุ่มกำลังฟุ้งซ่านจากกิจกรรมด้วยการมองโทรศัพท์"
+* คุณต้องสังเกตและปล่อยให้กลุ่มค้นหาว่าความต้องการของพวกเขาคือะไร อย่างไรก็ตาม บางครั้งคุณต้องตัดสินใจแทนพวกเขาเมื่อกลุ่มไม่สามารถทำได้
 
-### Workshop process
+### กระบวนการเวิร์กช็อป
 
-#### Check-in
+#### Check-in (การเช็คอิน)
 
-I always start a workshop with what is called a check-in. It is essential to be present physically and mentally for the workshop. So in a check-in, ask the attendees questions about how it is going with them. Like how was their weekend, how are they feeling, what do they hope to get out of the workshop today. You must not discuss any workshop or work-related stories. Always check-in first as a facilitator and lead by example by sharing just enough. Afterwards, let participants in the group decide for themselves when they will check-in popcorn style! When everyone is done, it is important to wrap up and summarise as a facilitator what you heard the participants say.
+ฉันมักเริ่มเวิร์กช็อปด้วยสิ่งที่เรียกว่า check-in มันเป็นสิ่งสำคัญที่จะต้องอยู่ด้วยทั้งร่างกายและจิตใจสำหรับเวิร์กช็อป ดังนั้นใน check-in ให้ถามผู้เข้าร่วมเกี่ยวกับสภาพของพวกเขา เช่น วันหยุดสุดสัปดาห์เป็นอย่างไร พวกเขารู้สึกอย่างไร พวกเขาหวังว่าจะได้อะไรจากเวิร์กช็อปวันนี้ คุณต้องไม่พูดคุยเรื่องเวิร์กช็อปหรือเรื่องที่เกี่ยวข้องกับงานใดๆ เช็คอินในฐานะผู้อำนวยความสะดวกเสมอก่อนและเป็นตัวอย่างโดยแบ่งปันเท่าที่พอดี หลังจากนั้น ปล่อยให้ผู้เข้าร่วมในกลุ่มตัดสินใจด้วยตัวเองว่าพวกเขาจะเช็คอินเมื่อไหร่แบบป๊อปคอร์น! เมื่อทุกคนทำเสร็จแล้ว สิ่งสำคัญคือต้องสรุปในฐานะผู้อำนวยความสะดวกว่าคุณได้ยินผู้เข้าร่วมพูดอะไร
 
-##### Agreements
+##### ข้อตกลง
 
-Because we have a room full of people with different perspectives, it is vital to make some agreements on how we collaborate during the workshop. We want to make it explicit by writing this on a flip chart and stick it to a wall so that you as a facilitator can point to these explicitly. I write and discuss the following three agreements from Deep Democracy:
+เนื่องจากเรามีห้องที่เต็มไปด้วยคนที่มีมุมมองที่แตกต่างกัน การทำข้อตกลงบางอย่างเกี่ยวกับวิธีการทำงานร่วมกันในระหว่างเวิร์กช็อปจึงเป็นสิ่งสำคัญ เราต้องการทำให้ชัดเจนโดยการเขียนสิ่งนี้ลงบนกระดาษฟลิปชาร์ตและติดไว้ที่ผนัง เพื่อที่คุณในฐานะผู้อำนวยความสะดวกจะสามารถชี้ไปที่สิ่งเหล่านี้อย่างชัดเจน ฉันเขียนและอภิปรายสามข้อตกลงต่อไปนี้จาก Deep Democracy:
 
-* Everyone is right; nobody has the monopoly on the truth.
-* We start a conversation to deepen our relationship.
-* We are willing to learn together.
+* ทุกคนถูกต้อง ไม่มีใครผูกขาดความจริง
+* เราเริ่มการสนทนาเพื่อเพิ่มความลึกซึ้งในความสัมพันธ์ของเรา
+* เรายินดีที่จะเรียนรู้ร่วมกัน
 
-After you can discuss with the attendees if they themselves have rules they want to add and discuss these with them if they need to be added.
+หลังจากนั้น คุณสามารถอภิปรายกับผู้เข้าร่วมว่าพวกเขามีกฎที่ต้องการเพิ่มหรือไม่ และอภิปรายกับพวกเขาว่าจำเป็นต้องเพิ่มหรือไม่
 
 ##### EventStorming
 
-Now it is time to give an intro on EventStorming. I usually tell a microstory to the people explaining why classic forms of collaboration don’t work for me, and why EventStorming is different. These are personal and I advice you to figure out such a story for yourself. Explain the basics of what a domain event is on the legend.
+ตอนนี้ถึงเวลาแนะนำเกี่ยวกับ EventStorming ฉันมักเล่าเรื่องสั้นให้คนฟังเพื่ออธิบายว่าทำไมรูปแบบการทำงานร่วมกันแบบคลาสสิกไม่เหมาะกับฉัน และทำไม EventStorming ถึงต่างออกไป เหล่านี้เป็นเรื่องส่วนตัวและฉันแนะนำให้คุณคิดเรื่องราวแบบนี้สำหรับตัวคุณเอง อธิบายพื้นฐานของ domain event คืออะไรบนคำอธิบายสัญลักษณ์
 
 ![Domain Event](/_resources/domain-event.png)
-*Source: https://leanpub.com/introducing_eventstorming*
+*ที่มา: https://leanpub.com/introducing_eventstorming*
 
-**Step 1: Chaotic exploration**
-Start with asking people to write their domain events that they know of for themselves. Here people must work by themselves so that we don’t bias each other. Also, try to avoid answering questions at this point. Tell them that they can put their domain events on the paper the way they feel is correct. We want their perception on the paper. Do not rush this part; this is the essential part of the whole EventStorming. When people start putting their domain events on they can begin to read each other’s events, but make sure they don’t begin discussing them out loud; it can bias or rush the others.
+**ขั้นตอนที่ 1: Chaotic exploration (การสำรวจแบบอลหม่าน)**
+เริ่มด้วยการขอให้ผู้คนเขียน domain events ที่พวกเขารู้จักด้วยตัวเอง ที่นี่ผู้คนต้องทำงานด้วยตัวเอง เพื่อไม่ให้เราลำเอียงซึ่งกันและกัน นอกจากนี้ พยายามหลีกเลี่ยงการตอบคำถามในจุดนี้ บอกพวกเขาว่าพวกเขาสามารถวาง domain events ของพวกเขาลงบนกระดาษในแบบที่พวกเขารู้สึกว่าถูกต้อง เราต้องการการรับรู้ของพวกเขาบนกระดาษ อย่าเร่งรีบในส่วนนี้ นี่เป็นส่วนที่สำคัญที่สุดของ EventStorming ทั้งหมด เมื่อผู้คนเริ่มวาง domain events ของพวกเขา พวกเขาสามารถเริ่มอ่าน events ของกันและกันได้ แต่ตรวจสอบให้แน่ใจว่าพวกเขาไม่เริ่มอภิปรายออกมาดังๆ มันสามารถลำเอียงหรือเร่งรีบคนอื่นได้
 
 ![Start EventStorming](/_resources/start-es.png)
-*Source: https://leanpub.com/introducing_eventstorming*
+*ที่มา: https://leanpub.com/introducing_eventstorming*
 
-**Step 2:  Enforce the timeline**
-After you are sure everyone is done with putting their domain events on the paper, we can start enforcing the timeline. It means asking the attendees to:
+**ขั้นตอนที่ 2: Enforce the timeline (บังคับให้เป็นไปตามเส้นเวลา)**
+หลังจากที่คุณแน่ใจว่าทุกคนทำเสร็จกับการวาง domain events ของพวกเขาบนกระดาษแล้ว เราสามารถเริ่มบังคับให้เป็นไปตามเส้นเวลา มันหมายถึงการขอให้ผู้เข้าร่วม:
 
-* Start discussing the events, I expect a lot of noise and chaos now.
-* Removing duplicate events, let them discuss if they really are duplicate events, it might be the same language for different concepts.
-* Ordering all events in the correct timeline.
-* Adding structure with tape when needed, but be careful adding structure too soon. You can lose valuable insights from doing so.
+* เริ่มอภิปราย events ฉันคาดหวังความวุ่นวายและความอลหม่านมากในขณนี้
+* ลบ events ที่ซ้ำกัน ปล่อยให้พวกเขาอภิปรายว่ามันเป็น events ที่ซ้ำกันจริงหรือไม่ มันอาจเป็นภาษาเดียวกันสำหรับแนวคิดที่ต่างกัน
+* จัดเรียง events ทั้งหมดในเส้นเวลาที่ถูกต้อง
+* เพิ่มโครงสร้างด้วยเทปเมื่อจำเป็น แต่ระวังการเพิ่มโครงสร้างเร็วเกินไป คุณอาจสูญเสียข้อมูลเชิงลึกที่มีค่าจากการทำเช่นนั้น
 
-**Step 3: Hotspots**
-During Step 2 we will get a lot of conflicts between several perceptions, which is good. Out of conflict we grow and gain new insights. However, to be able to manage these conflict we add a pinkish sticky where there are conflicts. We call these hotspots. Hotspots can also mean pain points or questions that are unanswered. As a facilitator, you at this phase add the hotspots.
+**ขั้นตอนที่ 3: Hotspots (จุดร้อน)**
+ในระหว่างขั้นตอนที่ 2 เราจะได้ความขัดแย้งมากมายระหว่างการรับรู้หลายอย่าง ซึ่งเป็นเรื่องดี จากความขัดแย้งเราเติบโตและได้รับข้อมูลเชิงลึกใหม่ๆ อย่างไรก็ตาม เพื่อที่จะสามารถจัดการความขัดแย้งเหล่านี้ได้ เราเพิ่มสติกเกอร์สีชมพูในที่ที่มีความขัดแย้ง เราเรียกสิ่งเหล่านี้ว่า hotspots Hotspots ยังสามารถหมายถึงจุดปวดหรือคำถามที่ยังไม่ได้รับคำตอบ ในฐานะผู้อำนวยความสะดวก คุณในขั้นตอนนี้เพิ่ม hotspots
 
-**Step 4: Add concepts when needed**
-Whenever another EventStorming concept pop-up, we add them to the legend and introduce these to the group. The picture that explains “almost” everything are the concepts you can add:
+**ขั้นตอนที่ 4: เพิ่มแนวคิดเมื่อจำเป็น**
+เมื่อใดก็ตามที่แนวคิด EventStorming อื่นปรากฏขึ้น เราเพิ่มพวกมันไปยังคำอธิบายสัญลักษณ์และแนะนำสิ่งเหล่านี้ให้กับกลุ่ม ภาพที่อธิบาย "เกือบ" ทุกอย่างคือแนวคิดที่คุณสามารถเพิ่ม:
 
-![Software picture](/_resources/software-picture.jpg)
+![Software picture](/_resources/Software-picture.jpg)
 
-##### Check-out
+##### Check-out (การเช็คเอาท์)
 
-Like the check-in, we also want to end a workshop with a check-out. Stand in a circle with everyone and ask them what their thought was about the workshop. People can step inside the circle, give a statement and if other people agree they step with them inside the circle. Finish when you are sure everyone is done.
+เหมือนกับ check-in เราก็ต้องการจบเวิร์กช็อปด้วย check-out ยืนเป็นวงกลมกับทุกคนและถามพวกเขาว่าความคิดของพวกเขาเกี่ยวกับเวิร์กช็อปเป็นอย่างไร ผู้คนสามารถก้าวเข้าไปในวงกลม ให้คำแถลง และถ้าคนอื่นเห็นด้วย พวกเขาก้าวเข้ามาในวงกลมด้วย จบเมื่อคุณแน่ใจว่าทุกคนทำเสร็จแล้ว
 
-Remember, Alberto calls EventStorming like a pizza. The paper roll and domain events are the base of your pizza, the dough, but you put your ingredients on top of it the way you like it (as long as it isn’t pineapple 😉). 
+จำไว้ว่า Alberto เรียก EventStorming ว่าเหมือนพิซซ่า กระดาษม้วนและ domain events คือฐานของพิซซ่าของคุณ แป้ง แต่คุณวางส่วนผสมของคุณไว้ข้างบนในแบบที่คุณชอบ (ตราบใดที่มันไม่ใช่สับปะรด 😉)
 
-## Sources
+## แหล่งข้อมูล
 
 * [EventStorming.com](https://EventStorming.com)
 * [Leanpub: Introducing EventStorming](https://leanpub.com/introducing_eventstorming)
-* [Leanpub: DDD First 15 years](https://leanpub.com/ddd_first_15_years) – Discovering Bounded Contexts with EventStorming — Alberto Brandolini  
-* [Alberto Brandolini](https://twitter.com/ziobrando)  
+* [Leanpub: DDD First 15 years](https://leanpub.com/ddd_first_15_years) – Discovering Bounded Contexts with EventStorming — Alberto Brandolini
+* [Alberto Brandolini](https://twitter.com/ziobrando)
 
-## Contributors
+## ผู้มีส่วนร่วม
 
-Thanks to all [existing and future contributors](https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet/graphs/contributors) and to the following individuals who have all contributed to the EventStorming Glossary and Cheat sheet:
+ขอบคุณ[ผู้มีส่วนร่วมที่มีอยู่และในอนาคต](https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet/graphs/contributors)ทุกคน และบุคคลต่อไปนี้ที่มีส่วนร่วมในคำศัพท์และคู่มือ EventStorming:
 
 - [Kenny Baas-Schwegler](https://github.com/baasie)
 - [Chris Richardson](https://github.com/cer)
 
-## Contributions and Feedback
+## การมีส่วนร่วมและข้อเสนอแนะ
 
-The EventStorming Glossary and Cheat sheet is freely available for you to use. In addition, your feedback and ideas are welcome to improve the technique or to create alternative versions.
+คำศัพท์และคู่มือ EventStorming สามารถใช้งานได้ฟรีสำหรับคุณ นอกจากนี้ ข้อเสนอแนะและไอเดียของคุณยินดีต้อนรับในการปรับปรุงเทคนิคหรือสร้างเวอร์ชันทางเลือก
 
-If you have questions you can ping us or open an [Issue](https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet/issues/new/choose).
+หากคุณมีคำถาม คุณสามารถติดต่อเราหรือเปิด [Issue](https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet/issues/new/choose)
 
-Feel free to also send us a pull request with your examples or experience reports.
+รู้สึกอิสระที่จะส่ง pull request ให้เราพร้อมตัวอย่างหรือรายงานประสบการณ์ของคุณ
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-This work is licensed under a [Creative Commons Attribution 4.0 International
-License][cc-by].
+งานนี้ได้รับอนุญาตภายใต้ [Creative Commons Attribution 4.0 International
+License][cc-by]
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
